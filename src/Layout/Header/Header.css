@@ -1,0 +1,14 @@
+.home_page_nav {
+  background: #f5f5f58c;
+  padding: 10px 5%;
+
+  box-shadow: -2px 3px 4px 1px #f3efef;
+}
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #7659cfc7;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
