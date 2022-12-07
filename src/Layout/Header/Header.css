@@ -12,3 +12,27 @@
   padding: 8px 15px;
   border-radius: 10px;
 }
+.list_items {
+  display: flex;
+  align-items: center;
+}
+
+.list_items a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0px 14px;
+  font-size: 17px;
+}
+.site_name {
+  color: #0f0395;
+}
+.list_items svg {
+  background: white;
+  color: #4c31e3;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: bold;
+}
