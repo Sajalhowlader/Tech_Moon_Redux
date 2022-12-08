@@ -8,3 +8,9 @@
 body {
   font-family: "Ubuntu", sans-serif;
 }
+section {
+  padding: 50px;
+}
+img {
+  width: 100%;
+}
