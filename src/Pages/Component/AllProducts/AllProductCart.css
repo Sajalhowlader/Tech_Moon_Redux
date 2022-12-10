@@ -1,4 +1,5 @@
-.products_container {
+.products_container,
+.cart_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -39,6 +40,9 @@
   font-weight: bold;
   color: white;
   font-size: 15px;
+}
+.remove_btn {
+  background: #ff0047;
 }
 h2.model {
   font-size: 17px;

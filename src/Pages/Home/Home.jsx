@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import AllProducts from "../Component/AllProducts/AllProducts";
 const Home = () => {
   const state = useSelector((state) => state);
-  console.log(state);
+  // console.log(state);
   const [products, setProducts] = useState([]);
  
   useEffect(() => {
@@ -11,7 +11,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  console.log(products);
+  // console.log(products);
   return (
     <section>
       <div className="products_container">
