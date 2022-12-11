@@ -4,12 +4,14 @@ import AllProducts from "../Component/AllProducts/AllProducts";
 
 const AddCart = () => {
   const carts = useSelector((state) => state.cart);
-  // console.log(cart)
+  console.log(carts);
   return (
     <section className="cart_container">
-      {carts.map((product) => (
-        <AllProducts key={product._id} product={product} />
-      ))}
+      {carts
+        .sort((a, b) => a._id - b._id)
+        .map((product) => (
+          <AllProducts key={product._id} product={product} />
+        ))}
     </section>
   );
 };

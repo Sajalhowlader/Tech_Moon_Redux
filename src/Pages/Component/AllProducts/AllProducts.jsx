@@ -10,15 +10,26 @@ import {
 import "./AllProductCart.css";
 const AllProducts = ({ product }) => {
   const { pathname } = useLocation();
-  const { image, model, keyFeature, price, rating, spec } = product;
+  const { image, model, keyFeature, price, rating, quantity, spec } = product;
   const dispatch = useDispatch();
   return (
-    <div className="product_cart">
+    <div
+      className={
+        pathname.includes("mycart")
+          ? "product_cart remove_product_cart"
+          : "product_cart"
+      }
+    >
+      {pathname.includes("mycart") && (
+        <p className="quantity">
+          Quantity: <span className="quantity_number">{quantity}</span>{" "}
+        </p>
+      )}
       <img src={image} alt="" />
       <h2 className="model">{model}</h2>
       <p className="price">Price : {price}</p>
       <p className="rating">Rating : {rating}</p>
-      {keyFeature.map((feature,index) => (
+      {keyFeature.map((feature, index) => (
         <p key={index} className="feature">
           {feature.slice(0, 32) + "..."}
         </p>
